@@ -1,4 +1,4 @@
-# 📊 Atliq Mart - Ad-Hoc Analysis
+# 📊 Atliq Mart - Promotional Campaign & Store Performance Analysis
 
 ## Table of Contents
 1. [Overview](#overview)

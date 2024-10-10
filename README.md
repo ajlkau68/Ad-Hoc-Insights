@@ -51,7 +51,7 @@ The analysis provides answers to the following critical business questions using
    JOIN dim_products d ON d.product_code = f.product_code
    WHERE base_price > 500 and promo_type = 'BOGOF';
    ```
-![Product and Category Analysis](./images/product_analysis.png)
+![Products featured in BOGOF promo](https://github.com/ajlkau68/Ad-Hoc-Insights/blob/main/images/query%201.png)
    
 2. Generate a report that provides an overview of the number of stores in each city:
    ```sql
@@ -60,7 +60,7 @@ The analysis provides answers to the following critical business questions using
    GROUP BY City
    ORDER BY Store_Count DESC;
    ```
-![Product and Category Analysis](./images/product_analysis.png)
+![Overview of Stores per City](https://github.com/ajlkau68/Ad-Hoc-Insights/blob/main/images/query%202.png)
    
 3. Generate a report that displays each campaign along with the total revenue generated before and after the campaign:
    ```sql
@@ -78,7 +78,7 @@ The analysis provides answers to the following critical business questions using
    JOIN dim_campaigns d ON d.campaign_id = f.campaign_id
    GROUP BY campaign_Name;
    ```
-![Product and Category Analysis](./images/product_analysis.png)
+![Revenue per Campaign](https://github.com/ajlkau68/Ad-Hoc-Insights/blob/main/images/query%203.png)
    
 4. Produce a report that calculates the Incremental Sold Quantity (ISU) for each category sold during the Diwali campaign.
 Additionally, provide rankings for the categories based on their ISU%:
@@ -101,7 +101,7 @@ Additionally, provide rankings for the categories based on their ISU%:
   	RANK() OVER(ORDER BY ISU_percent DESC) AS category_rank
   FROM category_sale;
 ```
-![Product and Category Analysis](./images/product_analysis.png)
+![ISU per Category during Diwali Campaign](https://github.com/ajlkau68/Ad-Hoc-Insights/blob/main/images/query%204.png)
 
 5. Create a report featuring the top 5 products ranked by Incremental Revenue Percentage (IR%) across all campaigns:
   ```sql
@@ -122,7 +122,7 @@ Additionally, provide rankings for the categories based on their ISU%:
   GROUP BY product_name, category
   ORDER BY IR_PCT DESC;
   ```
-![Product and Category Analysis](./images/product_analysis.png)
+![Top 5 Products by IR%](https://github.com/ajlkau68/Ad-Hoc-Insights/blob/main/images/query%205.png)
 
 ---
 
@@ -236,12 +236,12 @@ Contributions to this project are welcome! Please open an issue to discuss any m
 ## Screenshots
 
 **Product and Category Analysis Dashboard**  
-![Product and Category Analysis](./images/product_analysis.png)
+![Product and Category Analysis](https://github.com/ajlkau68/Ad-Hoc-Insights/blob/main/images/Product_analysis.png)
 
 **Store Performance Analysis Dashboard**  
-![Store Performance Analysis](./images/store_performance.png)
+![Store Performance Analysis](https://github.com/ajlkau68/Ad-Hoc-Insights/blob/main/images/Store_performance_analysis.png)
 
 **Promotion Type Analysis Dashboard**  
-![Promotion Type Analysis](./images/promo_type_analysis.png)
+![Promotion Type Analysis](https://github.com/ajlkau68/Ad-Hoc-Insights/blob/main/images/Promo_type_analysis.png)
 
 ---
